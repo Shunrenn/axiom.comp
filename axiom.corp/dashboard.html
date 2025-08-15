@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Axiom Corp - Dashboard</title>
+    <style>
+        body {
+            background-color: black;
+            color: limegreen;
+            font-family: monospace;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Center main message horizontally */
+            align-items: center;     /* Center main message vertically */
+            position: relative;      /* For positioning flag */
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .flag {
+            position: absolute;
+            right: 20px;              /* Push to right edge */
+            top: 50%;                 /* Center vertically */
+            transform: translateY(-50%) rotate(180deg); 
+            writing-mode: vertical-rl; /* Vertical text */
+            font-size: 1.2em;
+            color: black; /* Hidden in plain sight */
+            user-select: text; /* Allow highlighting */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Axiom Guest</h1>
+    <div class="flag">SEEN{W3lc0me_T0_Ax1om_Guest}</div>
+</body>
+</html>

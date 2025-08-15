@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contract Terms</title>
+    <style>
+        body {
+            background-color: black;
+            color: limegreen;
+            font-family: monospace;
+            padding: 20px;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* horizontal center */
+            align-items: center;     /* vertical center */
+            flex-direction: column;
+        }
+        .hidden-flag {
+            color: black; /* Hidden in plain sight */
+            font-size: 1.5em;
+        }
+        .offscreen-flag {
+            position: absolute;
+            left: -9999px; /* Players can copy-all to see */
+        }
+    </style>
+</head>
+<body>
+    <h2>Contract Terms</h2>
+    <p>Congratulations, you've found the contract.</p>
+    
+    <!-- Hidden in HTML comment -->
+    <!-- Flag: SEEN{CONTRACT_ACCEPTED_AWAIT_TARGET} -->
+    
+    <p class="hidden-flag">Flag: SEEN{CONTRACT_ACCEPTED_AWAIT_TARGET}</p>
+    <p class="offscreen-flag">Flag: SEEN{CONTRACT_ACCEPTED_AWAIT_TARGET}</p>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Axiom Internal Lookup</title>
+    <style>
+        body {
+            background-color: black;
+            color: limegreen;
+            font-family: monospace;
+            padding: 50px;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        #lookupForm {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        input, button {
+            background-color: black;
+            color: limegreen;
+            border: 1px solid limegreen;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        #result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+
+        /* Hidden flag in plain sight */
+        .flag {
+            color: black; /* hidden in plain sight */
+            font-size: 1.2em;
+            text-align: center;
+            margin-top: 10px;
+            user-select: text; /* allow highlight */
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Lookup</h1>
+    <form id="lookupForm">
+        <input type="text" id="empid" placeholder="Employee ID">
+        <button type="submit">Search</button>
+    </form>
+
+    <div id="result"></div>
+    <p class="flag" id="flag"></p>
+
+    <script>
+        // Simulated "database" for fake SQLi challenge
+        const employees = {
+            "AX-778": "SEEN{AX-778:Thorne:Aris:Head_of_Special_Projects}",
+            "AX-123": "Dummy Employee"
+        };
+
+        document.getElementById("lookupForm").addEventListener("submit", function(e){
+            e.preventDefault();
+            const id = document.getElementById("empid").value;
+
+            // Simple simulation of SQLi vulnerability
+            if(employees[id]) {
+                document.getElementById("result").innerText = "Employee Found: " + id;
+                document.getElementById("flag").innerText = employees[id];
+            } else {
+                document.getElementById("result").innerText = "No employee found.";
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Axiom Corp - Employee Portal</title>
+    <style>
+        body {
+            background-color: black;
+            color: limegreen;
+            font-family: monospace;
+            text-align: center;
+            padding-top: 100px;
+        }
+        input, button {
+            background-color: black;
+            color: limegreen;
+            border: 1px solid limegreen;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Axiom Employee Portal</h1>
+    <p>Authorized access only.</p>
+    <form onsubmit="return login()">
+        <input type="text" id="username" placeholder="Username" required><br>
+        <input type="password" id="password" placeholder="Password" required><br>
+        <button type="submit">Login</button>
+    </form>
+
+
+
+    <script>
+        function login() {
+            var u = document.getElementById('username').value;
+            var p = document.getElementById('password').value;
+            if (u === 'user' && p === 'password') {
+                window.location.href = 'dashboard.html';
+            } else {
+                alert('Invalid credentials.');
+            }
+            return false;
+        }
+    </script>
+</body>
+</html>

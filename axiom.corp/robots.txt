@@ -1,0 +1,33 @@
+Axiom Corporation — Employee Conduct & Access Rules
+
+Welcome to Axiom Corporation. All personnel, contractors, and guests are expected to follow these rules while on company property or using company systems.
+
+Authorized Access Only
+Access to internal systems and portals is limited to authorized personnel. Credentials are personal and non-transferable.
+
+Responsible Use of Resources
+Company devices, networks, and services must be used for legitimate business purposes. Avoid actions that may degrade or expose company systems.
+
+Data Protection
+Confidential information must be protected at all times. Do not copy, transmit, or distribute sensitive data without explicit authorization.
+
+Reporting Incidents
+If you discover a security issue, data leak, or suspicious activity, report it immediately to Security Operations via the official channel.
+
+No Unauthorized Discovery
+Probing, scanning, or attempting to discover hidden resources on company servers is prohibited unless you are explicitly authorized to perform security testing.
+
+Contract Terms — CONFIDENTAL
+The full Contract Terms are restricted and intended for internal review only. Employees must not reveal contract contents externally. (Access to contract terms is controlled; if you believe you need access, follow the proper request procedure.)
+
+Minimal Footprint Policy
+When accessing remote resources, leave no unnecessary artifacts. Clean temporary files and logs created during maintenance or testing.
+
+Third-Party Disclosure
+Any third-party requests for company documents or access must be forwarded to Legal for approval before disclosure.
+
+Acceptable Etiquette
+Treat colleagues and company data with respect. Harassment, intimidation, or unauthorized sharing of private information will result in disciplinary action.
+
+Compliance and Audits
+All employees are subject to periodic audits. Cooperation with audit teams is mandatory. 
